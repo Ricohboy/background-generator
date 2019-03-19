@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "header header header header header header" "menu menu menu menu sidebar sidebar" "article . article3 . sidebar sidebar" "article article2 article3 article4 sidebar sidebar" "article article2 article3 article4 sidebar sidebar" ". article2 . article4 sidebar sidebar" "footer footer footer footer footer footer";
+}
+
+.header { grid-area: header; height: 100px; }
+
+.footer { grid-area: footer; }
+
+.sidebar { grid-area: sidebar; }
+
+.article { grid-area: article; }
+
+.article2 { grid-area: article2; }
+
+.article3 { grid-area: article3; }
+
+.article4 { grid-area: article4; }
+
+.menu { grid-area: menu; }
+
+.box {
+  border: 3px solid green;
+}
